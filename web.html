@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>IPAMS</title>
+ <link rel="stylesheet" type="text/css" href="web.css">
+</head>
+ <body>
+  <div class="new">
+   <img src="C:\Users\sahit\Pictures\download (1).png">
+    <nav class="nav">
+     <a href="https://vit.ac.in/" style="margin:20px;" target="_blank">Home    </a>
+     <a href="https://hbr.org/2021/10/does-your-project-have-a-purpose" style="margin:20px;" target="_blank">Purpose    </a>
+     <a href="https://projectmaker.in/" style="margin:20px;" target="_blank">Project    </a>
+     <a href="https://www.microsoft.com/en-in/microsoft-teams/free" style="margin:20px;" target="_blank">Team</a>  
+    </nav>
+  </div>
+  <div class="new1">
+   <h1>Introducing <span style="color:Blue">IPAMS</span></h1>
+   <div class="new2">
+      <h2>About the project:</h2>
+   </div> 
+   <div class="new3">
+      <p>The interview testing system aims to combine Arduino, sensors, wireless data transmission, machine learning techniques, and Flask to create a comprehensive evaluation platform for candidates. Utilizing Arduino, the system will capture physiological data from candidates during interviews, such as heart rate, skin conductance, and facial expressions. The collected data will be wirelessly transmitted to a central processing unit for analysis using machine learning algorithms. Through the integration of Flask, a web framework, the system will present real-time feedback on candidates' performance during interviews. The machine learning algorithms will assess and evaluate candidates' responses based on the captured physiological data, providing objective insights into their performance. The system will enable interviewers to access the results and analysis through a dedicated website created with Flask. By leveraging machine learning, the system can identify patterns and correlations in physiological data, enhancing the assessment and evaluation process. The real-time feedback provided by the system will enable candidates to make immediate adjustments and improvements to their performance during the interview. The combination of Arduino, sensors, wireless data transmission, machine learning, and Flask creates a powerful and innovative approach to modernizing the interview process. This comprehensive system aims to improve objectivity, accuracy, and efficiency in assessing candidates, ultimately facilitating better hiring decisions.</p>
+   </div>
+   <div class="new2">
+      <h2>Purpose of the project:</h2>
+   </div>
+   <div class="new3">
+      <p>The IPAMS project aims to create an interview testing system using Arduino, sensors, wireless data transmission, machine learning, and Flask web development. The system captures physiological data from candidates during interviews and provides real-time feedback based on the analysis of that data. Key milestones include sensor data acquisition and processing, machine learning model training and real-time analysis, web application development and visualization, and deployment with security measures. Proposed features include real-time data capture, machine learning-based analysis, immediate feedback, and a web-based interface. Successful completion of the project can lead to an objective and efficient interview assessment system, improving hiring decisions and the overall interview process. Specific implementation, deliverables, and scope may vary based on project requirements and constraints.</p>
+   </div>
+   <div class="new2">
+      <h2>Upload the file</h2>
+   </div>
+       <div class="box">
+          <a class="butto" href="#popup1">Upload</a>
+       </div>
+       <div id="popup1" class="overlays">
+          <div class="popup">
+            <h4>Hello</h4>
+              <a class="close" href="#">&times;</a>
+                  <div class="content">
+                    Please upload the file.
+                  </div>
+          </div>
+       </div>
+   <div class="new4">
+      <h2>TEAM</h2>
+<div id="parent-container">
+
+<div class="navigation-buttons">
+    <div class="previous nav-btn"><</div>
+    <div class="next nav-btn">></div>
+</div>
+
+<div class="slider-carousel">
+       <div class="images main">
+         <img src="C:\Users\sahit\Pictures\webs.jpg" alt="student 1" />
+       <div class="image-text">Manasa Viriyala - 21BCE7449</div>
+       </div>
+       <div class="images">
+         <img src="C:\Users\sahit\Pictures\y.png" alt="student 2" />
+         <div class="image-text">Sathvik Vadarevu - 21BCE9413</div>
+       </div>
+       <div class="images">
+         <img src="C:\Users\sahit\Pictures\m.png" alt="student 3" />
+         <div class="image-text">Tribuvana Karthikeya Gundu - 21BCE9810</div>
+       </div> 
+       <div class="images">
+         <img src="C:\Users\sahit\Pictures\webs.jpg" alt="student 4" />
+         <div class="image-text">Komal Garlapati - 21BCE9758</div>
+       </div>
+       <div class="images">
+         <img src="C:\Users\sahit\Pictures\y.png" alt="student 5" />
+         <div class="image-text">Kotha Dinesh Sai - 21BCE9412</div>
+       </div>
+       <div class="images">
+         <img src="C:\Users\sahit\Pictures\m.png" alt="student 6" />
+         <div class="image-text">Vinukonda Venkat - 21BCE9136</div>
+       </div>
+
+</div>
+
+</div>
+
+            <script>
+
+    const previous = document.querySelector('.previous');
+    const next = document.querySelector('.next');
+    const images = document.querySelector('.slider-carousel').children;
+    const totalImages = images.length;
+    let currentIndex = 0;
+
+
+  // Event Listeners to previous and next buttons
+    previous.addEventListener('click', () => {
+      previousImage()
+    })
+
+    next.addEventListener('click', () => {
+      nextImage();
+    })
+    
+    
+    // Function to go to next Image
+    function nextImage(){
+
+      images[currentIndex].classList.remove('main');
+      if(currentIndex == totalImages-1){
+          currentIndex = 0;
+        }
+        else{
+          currentIndex++;
+        }
+
+      images[currentIndex].classList.add('main');
+      
+    }
+    
+    // Function to go to previous Image
+    function previousImage(){
+
+      images[currentIndex].classList.remove('main');
+      if(currentIndex == 0){
+          currentIndex = totalImages-1;
+        }
+        else{
+          currentIndex--;
+        }
+    
+      images[currentIndex].classList.add('main');
+
+    }
+    
+       
+          </script>
+  </div>         
+  </div>
+ </body>
+</html>
